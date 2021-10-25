@@ -12,5 +12,9 @@ namespace TestBookStore.Controllers
         {
             return View();
         }
+        public ViewResult AboutUs()
+        {
+            return View();
+        }
     }
 }
