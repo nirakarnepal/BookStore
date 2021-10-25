@@ -29,6 +29,25 @@ namespace TestBookStore
             app.Use(async (context, next) =>
             {
                 await context.Response.WriteAsync("Hello from first middleware");
+
+                await next();
+
+                await context.Response.WriteAsync("Hello from first middleware response");
+            });
+
+            app.Use(async (context, next) =>
+            {
+                await context.Response.WriteAsync("Hello from second middleware");
+
+                await next();
+
+                await context.Response.WriteAsync("Hello from Second middleware response");
+            });
+
+            app.Use(async (context, next) =>
+            {
+                await context.Response.WriteAsync("Hello from third middleware");
+
             });
             //app.UseRouting();
 
