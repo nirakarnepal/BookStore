@@ -29,8 +29,8 @@ namespace TestBookStore.Repository
             {
                 new BookModel(){Id=1, Title = "MVC", Author = "Kar", Description="You Can Learn MVC", Category="Design", Language="English"},
                 new BookModel(){Id=2, Title = "C#", Author = "Nepal", Description="You Can Learn C#", Category="Programming", Language="English"},
-                new BookModel(){Id=3, Title = "ASP", Author = "Amap", Description="You Can Learn ASP", Category="Programming", Language="French"},
-                new BookModel(){Id=4, Title = ".net", Author = "John", Description="You Can Learn .NET", Category="Coding", Language="English"},
+                new BookModel(){Id=3, Title = "ASP.NET", Author = "Amap", Description="You Can Learn ASP", Category="Programming", Language="French"},
+                new BookModel(){Id=4, Title = "Azure DevOps", Author = "John", Description="You Can Learn Azure", Category="Coding", Language="English"},
                 new BookModel(){Id=5, Title = "identity", Author = "Adap", Description="You Can Learn Identity", Category="Framework", Language="Spanish"}
             };
         }
