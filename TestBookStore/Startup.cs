@@ -26,6 +26,7 @@ namespace TestBookStore
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseStaticFiles();
 
             app.UseRouting();
 
