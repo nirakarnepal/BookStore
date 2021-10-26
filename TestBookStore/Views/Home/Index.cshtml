@@ -10,16 +10,24 @@
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
     <link href="~/css/Site.css" rel="stylesheet" />
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
 </head>
-<body>
+<body class="container">
 
     <h1>Welcome to BookStore</h1>
-    <img src="~/images/logo.png" class="logo"/>
+    <input type="button" value="ClickMe" class="btn btn-danger" />
+    <img src="~/images/logo.png" class="logo" />
 
-    <h1>Welcome to BookStore</h1>
+    <h1 class="h1">Welcome to BookStore</h1>
     <h1>@DateTime.Now</h1>
     <p> This is Home</p>
     <p>this is escape sequence @@nnepal</p>
-   
+
 </body>
+<script src="~/lib/jquery/jquery.js"></script>
 </html>
+<script>
+    $(document).ready(function () {
+        alert("Page loaded");
+    });
+</script>

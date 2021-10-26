@@ -6,3 +6,4 @@
 /TestBookStore/.vs/TestBookStore
 /TestBookStore/bin/Debug/netcoreapp3.1
 /TestBookStore/obj
+/TestBookStore/wwwroot/lib
