@@ -1,14 +1,12 @@
 ﻿@{ 
-    dynamic data = ViewBag.Data;
-    var bookInfo = ViewData["book"] as BookModel;
-    ViewData["Title"] = "Home";
+    var book = ViewData["Book"] as BookModel;
 }
 
 <section class="jumbotron text-center">
     <div class="container">
-        <h1>Welcome to Bookstore @ViewData["property1"]</h1>
+        <h1>Welcome to Bookstore</h1>
         <p class="lead text-muted">
-            @bookInfo.Id
+            @book.Id @book.Title
             @*@data.Id @data.Name<br />
             @ViewBag.Type.Id is the ID<br />
             @ViewBag.Type.Author is the Author<br />*@
