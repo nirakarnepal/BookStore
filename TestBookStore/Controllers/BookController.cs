@@ -23,10 +23,10 @@ namespace TestBookStore.Controllers
         }
         public ViewResult GetBook(int id)
         {
-            dynamic data = new ExpandoObject();
-            data.book = _bookRepository.GetBookById(id);
-            data.Name = "N Nepal";
-            //var data = _bookRepository.GetBookById(id);
+            //dynamic data = new ExpandoObject();
+            //data.book = _bookRepository.GetBookById(id);
+            //data.Name = "N Nepal";
+            var data = _bookRepository.GetBookById(id);
             return View(data);
         }
 
