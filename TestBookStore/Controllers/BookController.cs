@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Threading.Tasks;
 using TestBookStore.Models;
@@ -22,7 +23,10 @@ namespace TestBookStore.Controllers
         }
         public ViewResult GetBook(int id)
         {
-            var data = _bookRepository.GetBookById(id);
+            dynamic data = new ExpandoObject();
+            data.book = _bookRepository.GetBookById(id);
+            data.Name = "N Nepal";
+            //var data = _bookRepository.GetBookById(id);
             return View(data);
         }
 
