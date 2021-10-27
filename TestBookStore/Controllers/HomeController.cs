@@ -12,13 +12,16 @@ namespace TestBookStore.Controllers
     {
         public ViewResult Index()
         {
-            ViewBag.Title = "NEP";
-            dynamic data = new ExpandoObject();
-            data.Id = 1;
-            data.Name = "NN";
-            ViewBag.Data = data;
+            //ViewBag.Title = "NEP";
+            //dynamic data = new ExpandoObject();
+            //data.Id = 1;
+            //data.Name = "NN";
+            //ViewBag.Data = data;
 
-            ViewBag.Type = new BookModel() {Id=5, Author="Author" };
+            //ViewBag.Type = new BookModel() {Id=5, Author="Author" };
+
+            ViewData["property1"] = "N Nepal";
+            ViewData["book"] = new BookModel() { Author = "N Nepal", Id = 1111 };
 
             return View();
         }
